@@ -1,13 +1,13 @@
 Amazing — now we make the repo look serious.
 
-Below is a **full README.md** you can paste directly into your project and then edit as the build progresses. I’ve written it so it already feels like a real engineering project while still being honest that parts are in progress.
+Below is a full README.md you can paste directly into your project and then edit as the build progresses. I’ve written it so it already feels like a real engineering project while still being honest that parts are in progress.
 
 ---
 
 ````md
 # UAV Safety Companion for PX4 using ROS 2 and Zephyr
 
-A simulation-based UAV companion safety project built with **PX4 SITL**, **Gazebo**, **ROS 2**, and a planned **Zephyr/micro-ROS RTOS safety controller**.
+A simulation-based UAV companion safety project built with PX4 SITL, Gazebo, ROS 2, and a planned Zephyr/micro-ROS RTOS safety controller.
 
 This project is designed to demonstrate aerospace and autonomy-relevant software engineering skills across simulation, robotics middleware, fault detection, structured state handling, and embedded-style safety logic — without requiring physical hardware.
 
@@ -17,15 +17,15 @@ This project is designed to demonstrate aerospace and autonomy-relevant software
 
 Modern autonomous aerial systems often rely on more than just a flight controller. In practice, a UAV stack may include a companion layer responsible for mission awareness, telemetry monitoring, fault handling, and fail-safe decision support.
 
-This project focuses on building that **companion safety layer** in a fully simulation-based environment.
+This project focuses on building that companion safety layer in a fully simulation-based environment.
 
 Instead of implementing a flight controller from scratch, this system uses:
 
-- **PX4 SITL** for UAV autopilot simulation
-- **Gazebo** for the simulation environment
-- **ROS 2** for companion-side logic and message flow
-- **Zephyr + micro-ROS** for a planned RTOS-style safety controller
-- **Python and C++** for mixed-language robotics development
+- PX4 SITL for UAV autopilot simulation
+- Gazebo for the simulation environment
+- ROS 2 for companion-side logic and message flow
+- Zephyr + micro-ROS for a planned RTOS-style safety controller
+- Python and C++ for mixed-language robotics development
 
 The end goal is to simulate a UAV safety workflow where telemetry is monitored, abnormal conditions are detected, and structured safety states are triggered.
 
@@ -33,7 +33,7 @@ The end goal is to simulate a UAV safety workflow where telemetry is monitored, 
 
 ## Project Goal
 
-The goal of this project is to build a **simulation-based UAV safety companion system** that can:
+The goal of this project is to build a simulation-based UAV safety companion system that can:
 
 - monitor telemetry and vehicle state from PX4 SITL
 - detect abnormal or unsafe operating conditions
@@ -47,13 +47,13 @@ The goal of this project is to build a **simulation-based UAV safety companion s
 
 This project was chosen to combine:
 
-- **aerospace/autonomy relevance**
-- **ROS 2**
-- **C++**
-- **Python**
-- **RTOS concepts**
-- **simulation-first development**
-- **structured documentation and testing**
+- aerospace/autonomy relevance
+- ROS 2
+- C++
+- Python
+- RTOS concepts
+- simulation-first development
+- structured documentation and testing
 
 It is intended as a portfolio project for roles related to:
 
@@ -146,19 +146,19 @@ PX4 SITL -> ROS 2 monitor / supervisor <-> micro-ROS / Zephyr RTOS safety contro
 This project is planned to support several safety-relevant fault conditions.
 
 ### Initial Faults
-- **Heartbeat timeout**  
+- Heartbeat timeout  
   Detects missing or stale heartbeat / update signals.
 
-- **Stale telemetry**  
+- Stale telemetry  
   Detects delayed, frozen, or invalid telemetry flow.
 
-- **Geofence breach**  
+- Geofence breach  
   Simulates out-of-bound vehicle behavior.
 
-- **Low-battery style warning**  
+- Low-battery style warning  
   Simulates a degraded-energy or cautionary system condition.
 
-- **Mission-state mismatch**  
+- Mission-state mismatch  
   Detects inconsistency between expected and observed mission state.
 
 ### Safety States
@@ -224,7 +224,7 @@ uav-safety-companion/
 
 ## Python and C++ in This Project
 
-This project intentionally uses both **Python** and **C++**.
+This project intentionally uses both Python and C++.
 
 ### C++ is intended for
 
@@ -241,7 +241,7 @@ This project intentionally uses both **Python** and **C++**.
 * fast prototyping
 * test utilities
 
-ROS 2 supports both **C++ (`rclcpp`)** and **Python (`rclpy`)**, so mixed-language development is a normal and practical approach for this project.
+ROS 2 supports both C++ (`rclcpp`) and Python (`rclpy`), so mixed-language development is a normal and practical approach for this project.
 
 ---
 
@@ -249,7 +249,7 @@ ROS 2 supports both **C++ (`rclcpp`)** and **Python (`rclpy`)**, so mixed-langua
 
 ## 3-Day Milestone
 
-The initial goal is to make the project credible enough to show as **ongoing**:
+The initial goal is to make the project credible enough to show as ongoing:
 
 * bring up PX4 SITL
 * launch Gazebo simulation
@@ -275,7 +275,7 @@ The extended goal is to complete a more mature version of the system:
 
 ## Current Status
 
-This project is currently **in progress**.
+This project is currently in progress.
 
 The current focus is on:
 
@@ -338,45 +338,6 @@ Possible future extensions include:
 * latency and timing analysis
 * more advanced recovery logic
 * hardware deployment path after simulation maturity
-
----
-
-## Author
-
-Built as a portfolio project focused on aerospace/autonomy-oriented software engineering, ROS 2 systems, simulation-based validation, and RTOS-style safety design.
-
-````
-
----
-
-## What to do right after pasting this
-
-Update only these 4 spots first:
-
-### 1. Repo name in structure
-If your actual repo name is slightly different, change it in the tree.
-
-### 2. Current status checkboxes
-Leave them honest. Do not mark anything done unless it is actually done.
-
-### 3. Author section
-You can replace it with your name later.
-
-### 4. Documentation paths
-Make sure they match your real folders.
-
----
-
-## Next small improvement after pasting
-Add this near the top, under the first paragraph, once you have them:
-
-```md
-## Demo
-- Demo video: [coming soon]
-- Architecture diagram: [coming soon]
-- Setup notes: [`docs/setup_notes.md`](docs/setup_notes.md)
-- Test log: [`docs/test_log.md`](docs/test_log.md)
-````
 
 ---
 
