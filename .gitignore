@@ -1,9 +1,37 @@
+# Python
 .venv/
-build/
-install/
-log/
 __pycache__/
 *.pyc
 *.pyo
-*.swp
+
+# ROS 2 workspace artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Generic build/log artifacts
+build/
+install/
+log/
+*.log
+
+# PX4 generated/build files
+external/PX4-Autopilot/build/
+external/PX4-Autopilot/log/
+external/PX4-Autopilot/.cache/
+external/PX4-Autopilot/.vs/
+external/PX4-Autopilot/*.ulg
+external/PX4-Autopilot/dataman
+external/PX4-Autopilot/parameters.bson
+external/PX4-Autopilot/parameters_backup.bson
+
+# ROS bags / recordings
+*.db3
+*.mcap
+
+# VS Code
+.vscode/
+
+# OS files
 .DS_Store
+Thumbs.db

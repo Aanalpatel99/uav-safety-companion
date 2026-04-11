@@ -7,3 +7,10 @@
 - Clone PX4 into `external/PX4-Autopilot`
 - Run `Tools/setup/ubuntu.sh`
 - Attempt first SITL launch
+
+## PX4 SITL Verification
+- Command used: `make px4_sitl gz_x500`
+- Result: [success / error]
+- Gazebo launched: [yes / no]
+- Drone visible: [yes / no]
+- Notes:
