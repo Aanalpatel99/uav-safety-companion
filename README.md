@@ -1,8 +1,3 @@
-Amazing — now we make the repo look serious.
-
-Below is a full README.md you can paste directly into your project and then edit as the build progresses. I’ve written it so it already feels like a real engineering project while still being honest that parts are in progress.
-
----
 
 ````md
 # UAV Safety Companion for PX4 using ROS 2 and Zephyr
